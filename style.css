@@ -1,0 +1,16 @@
+body {
+    background-image: url('vidal-BG.jpg');
+    background-size: cover;
+}
+
+.bg-navy {
+    background-color: navy !important;
+}
+
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
