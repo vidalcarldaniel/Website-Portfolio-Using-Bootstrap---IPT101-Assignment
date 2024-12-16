@@ -22,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#achievements">Achievement</a>
+                        <a class="nav-link text-light aria-current="page" href="index.html#achievements">Achievement</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#projects">Project</a>
+                        <a class="nav-link text-light" aria-current="page" href="index.html#projects">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active text-light" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -39,35 +39,58 @@
     </nav>
     
 
-    <!-- Contact -->
-<section id="contact" class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h2 class="text-light text-center">Contact Us</h2>
-            <form id="contact-form" class="bg-dark p-4 rounded">
-                <div class="mb-3 text-light">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+    <!-- Contact Section -->
+<div id="contact" class="container mb-5" style="margin-top: -5%;">
+    <div id="container_contact" class="bg-none">
+        <div class="row align-items-center">
+
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="vidal-contact.png" alt="Contact Image" class="img-fluid rounded" style="height: 100%; object-fit: cover;">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="fw-bold mb-4 text-light">Contact Us</h1>
+                
+                <!-- Contact Form -->
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <label for="name" class="form-label fw-semibold text-light">Full Name</label>
+                        <input type="text" class="form-control border-0 border-bottom" id="name" placeholder="" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label fw-semibold text-light">E-mail</label>
+                        <input type="email" class="form-control border-0 border-bottom" id="email" placeholder="" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="form-label fw-semibold text-light">Message</label>
+                        <textarea class="form-control border-0 border-bottom" id="message" rows="3" placeholder="" required></textarea>
+                    </div>
+                    <div class="text-center text-light">
+                        <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">Send <i class='bx bx-send'></i></button>
+                    </div>
+                </form>
+
+                <!-- Contact Information -->
+                <div class="mt-5">
+                    <p class="mb-2 text-light"><strong>Contact</strong><br>vidalcarldaniel@gmail.com</p>
+                    <p class="mb-2 text-light"><strong>Based in</strong><br>Iligan City, Philippines</p>
                 </div>
-                <div class="mb-3 text-light">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+
+                <!-- Social Media Icons -->
+                <div class="mt-4">
+                    <a href="https://www.facebook.com/daniel.carl.1004" class="text-dark me-3 fs-4"><i class="bi bi-facebook text-light"></i></a>
+                    <a href="https://www.instagram.com/vidalcarldaniel/" class="text-dark me-3 fs-4"><i class="bi bi-instagram text-light"></i></a>
+                    <a href="https://x.com/Itz_ReaperAce" class="text-dark fs-4"><i class="bi bi-twitter text-light"></i></a>
                 </div>
-                <div class="mb-3 text-light">
-                    <label for="subject" class="form-label">Subject</label>
-                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="mb-3 text-light">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Message..." required></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-success w-25" id="submit">Submit</button>
-                </div>
-            </form>            
+            </div>
         </div>
     </div>
+        
 </section>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
     <script src="script.js"></script>

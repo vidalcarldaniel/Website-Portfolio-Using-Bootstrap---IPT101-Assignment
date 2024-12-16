@@ -8,7 +8,7 @@ body {
 }
 
 #achievements, #projects, #contact {
-    padding-top: 90px;
+    padding-top: 150px;
 }
 
 .carousel-inner img {
@@ -50,4 +50,8 @@ body {
 
 .mt-10 {
     margin-top: 10rem;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
 }
